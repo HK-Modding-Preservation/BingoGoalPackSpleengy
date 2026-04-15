@@ -173,6 +173,7 @@ namespace BingoGoalPackSpleengy
             ];
             spleenGoals.AddRange(vanillaGoals);
             spleenGoals.Remove("Kill Myla");
+            spleenGoals.Remove("Have 4 Rancid Eggs");
             spleenGoals.Remove("Unlock Queen's Stag + King's Stag Stations");
             spleenGoals.AddRange(extendedGoals);
             spleenGoals.Remove("Slash Millibelle in Pleasure House");
