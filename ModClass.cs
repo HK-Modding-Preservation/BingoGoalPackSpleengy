@@ -26,7 +26,7 @@ namespace BingoGoalPackSpleengy
 
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
         {
-            OrderedLoader.OnReadyForGoalsGameModes += SetupGoalsGameModes;
+            OrderedLoader.OnStandaloneGoalsGameModesLoaded += SetupGoalsGameModes;
             var _hook = new ILHook
                 (
                 typeof(DreamPlant).GetMethod("CheckOrbs", BindingFlags.NonPublic | BindingFlags.Instance).GetStateMachineTarget(),
@@ -125,7 +125,7 @@ namespace BingoGoalPackSpleengy
 
             Exclude(goals, "Read the Kingdom's Edge lore tablet", "Break the 420 geo rock in Kingdom's Edge", fullExclusion);
 
-            Exclude(goals, "Complete the Crystal Peak Root", "Hollownest Crown Pale Ore", lineExclusion);
+            Exclude(goals, "Complete the Crystal Peak Root", "Hallownest Crown Pale Ore", lineExclusion);
         }
         public static void Exclude(Dictionary<string, AdvancedGoal> goals, string goal1, string goal2, bool line = false)
         {

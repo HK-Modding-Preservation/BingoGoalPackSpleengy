@@ -1,0 +1,174 @@
+﻿[
+  {
+    "name": "King's Brand",
+    "condition": {
+      "type": "Bool",
+      "variableName": "hasKingsBrand",
+      "expectedValue": true
+    }
+  },
+  {
+    "name": "Obtain 2 extra soul vessels",
+    "condition": {
+      "type": "Int",
+      "variableName": "MPReserveMax",
+      "expectedQuantity": 66,
+      "state": "Current"
+    }
+  },
+  {
+    "name": "2 nail arts",
+    "condition": {
+      "type": "Some",
+      "amount": 2,
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "hasDashSlash",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "hasUpwardSlash",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "hasCyclone",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dream Nail Macebug",
+    "condition": {
+      "type": "Bool",
+      "variableName": "dreamNailedMaceBug",
+      "expectedValue": true
+    }
+  },
+  {
+    "name": "All Grubs: Howling Cliffs (1) + Crypts (1)",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_RestingGrounds_10",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_Fungus1_28",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Save the 2 grubs in Kingdom's Edge",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_Deepnest_East_14",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "grubSaved_single_Deepnest_East_11",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Read both lore tablets in Soul Sanctum",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Ruins1_23_Inspect Region",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Ruins1_32_Inspect Region",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Read the Kingdom's Edge lore tablet",
+    "condition": {
+      "type": "Bool",
+      "variableName": "readLoreTablet_Deepnest_East_17_Tut_tablet_top",
+      "expectedValue": true
+    }
+  },
+  {
+    "name": "Isma's Grove + Howlings Cliffs lore tablets",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Waterways_07_Inspect Region",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Cliffs_01_Tut_tablet_top",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Spire + Pleasure House lore tablets",
+    "condition": {
+      "type": "And",
+      "conditions": [
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Ruins2_Watcher_Room_Inspect Region",
+          "expectedValue": true
+        },
+        {
+          "type": "Bool",
+          "variableName": "readLoreTablet_Ruins_Elevator_Inspect Region",
+          "expectedValue": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Complete the Crystal Peak Root",
+    "condition": {
+      "type": "Bool",
+      "variableName": "dreamTreeCompleted_PEAK",
+      "expectedValue": true
+    }
+  },
+  {
+    "name": "Complete the Hive Root",
+    "condition": {
+      "type": "Bool",
+      "variableName": "dreamTreeCompleted_HIVE",
+      "expectedValue": true
+    }
+  },
+  {
+    "name": "Have 6 Rancid Eggs",
+    "condition": {
+      "type": "Int",
+      "variableName": "rancidEggs",
+      "expectedQuantity": 6,
+      "state": "Current"
+    }
+  }
+]
