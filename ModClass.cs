@@ -57,6 +57,7 @@ namespace BingoGoalPackSpleengy
                         FullExclusions = [.. basicGoal.exclusions.Select(s => string.Copy(s))],
                     });
                 }
+                SetupCustomExclusions(advancedGoals);
             return advancedGoals;
         }
 
@@ -82,8 +83,6 @@ namespace BingoGoalPackSpleengy
             Exclude(goals, "Idol: Deepnest Zote", "Rescue Zote in Deepnest", fullExclusion);
 
             Exclude(goals, "Dream Nail Willoh's Meal", "Seal: Queen's Station", fullExclusion);
-
-            Exclude(goals, "Unlock Queen's Stag + King's Stag Stations", "Have 1500 geo in the bank", lineExclusion);
 
             Unexclude(goals, "Save the 2 grubs in Hive", "Mask Shard  in the Hive");
             Exclude(goals, "Save the 2 grubs in Hive", "Mask Shard  in the Hive", lineExclusion);
