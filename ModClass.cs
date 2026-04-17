@@ -125,6 +125,8 @@ namespace BingoGoalPackSpleengy
             Exclude(goals, "Read the Kingdom's Edge lore tablet", "Break the 420 geo rock in Kingdom's Edge", fullExclusion);
 
             Exclude(goals, "Complete the Crystal Peak Root", "Hallownest Crown Pale Ore", lineExclusion);
+
+            Exclude(goals, "Broken Vessel", "Unlock Hidden Stag Station", lineExclusion);
         }
         public static void Exclude(Dictionary<string, AdvancedGoal> goals, string goal1, string goal2, bool line = false)
         {
