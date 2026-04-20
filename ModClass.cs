@@ -82,7 +82,7 @@ namespace BingoGoalPackSpleengy
 
             Exclude(goals, "Idol: Deepnest Zote", "Rescue Zote in Deepnest", fullExclusion);
 
-            Exclude(goals, "Dream Nail Willoh's Meal", "Seal: Queen's Station", fullExclusion);
+            Exclude(goals, "Dream Nail Willoh's meal", "Seal: Queen's Station", fullExclusion);
 
             Unexclude(goals, "Save the 2 grubs in Hive", "Mask Shard  in the Hive");
             Exclude(goals, "Save the 2 grubs in Hive", "Mask Shard  in the Hive", lineExclusion);
