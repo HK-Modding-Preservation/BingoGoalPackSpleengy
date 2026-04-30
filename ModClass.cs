@@ -113,7 +113,7 @@ namespace BingoGoalPackSpleengy
             Exclude(goals, "Read both lore tablets in Soul Sanctum", "Soul Master", fullExclusion);
             Exclude(goals, "Read both lore tablets in Soul Sanctum", "Desolate Dive", fullExclusion);
 
-            Exclude(goals, "King's Brand", "Hornet 2", lineExclusion);
+            Exclude(goals, "King's Brand", "Hornet 2", fullExclusion);
 
             Exclude(goals, "Defeat 3 dream warriors", "Xero", lineExclusion);
             Exclude(goals, "Defeat 3 dream warriors", "Galien", lineExclusion);
@@ -125,12 +125,9 @@ namespace BingoGoalPackSpleengy
             Exclude(goals, "Break the 420 geo rock in Kingdom's Edge", "Read the Kingdom's Edge lore tablet", fullExclusion);
             Exclude(goals, "Break the 420 geo rock in Kingdom's Edge", "Save the 2 grubs in Kingdom's Edge", fullExclusion);
 
-            Exclude(goals, "Complete the Crystal Peak Root", "Hallownest Crown Pale Ore", lineExclusion);
-
             Exclude(goals, "Broken Vessel", "Unlock Hidden Stag Station", lineExclusion);
             Exclude(goals, "Kill a Lightseed", "Broken Vessel", fullExclusion);
             Exclude(goals, "Kill a Lightseed", "Monarch Wings", fullExclusion);
-            Exclude(goals, "Kill a Lightseed", "Lost Kin", fullExclusion);
         }
         public static void Exclude(Dictionary<string, AdvancedGoal> goals, string goal1, string goal2, bool line = false)
         {
